@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 in the Bay - Construction & Handyman Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+  <!-- Header -->
+  <header class="bg-blue-900 text-white py-4">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">2 in the Bay</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#home" class="hover:text-blue-300">Home</a></li>
+          <li><a href="#services" class="hover:text-blue-300">Services</a></li>
+          <li><a href="#about" class="hover:text-blue-300">About</a></li>
+          <li><a href="#contact" class="hover:text-blue-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-gray-100 py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-4">Quality Construction & Handyman Services</h2>
+      <p class="text-lg mb-6">Serving the Bay Area with reliable, professional home improvement solutions.</p>
+      <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Get a Quote</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">General Construction</h3>
+          <p>From renovations to new builds, we handle all aspects of construction with precision and care.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Handyman Services</h3>
+          <p>Small repairs, installations, and maintenance tasks to keep your home in top shape.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Remodeling</h3>
+          <p>Transform your space with our expert kitchen, bathroom, and home remodeling services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">About Us</h2>
+      <p class="text-lg text-center max-w-2xl mx-auto">
+        2 in the Bay is a locally owned business serving the Bay Area with top-notch construction and handyman services. With over 10 years of experience, our skilled team is dedicated to delivering quality workmanship and exceptional customer service.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+      <div class="max-w-lg mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <p class="text-lg mb-4"><strong>Email:</strong> contact@2inthebay.com</p>
+          <p class="text-lg mb-4"><strong>Phone:</strong> (415) 555-1234</p>
+          <p class="text-lg mb-4"><strong>Address:</strong> 123 Bay St, San Francisco, CA 94133</p>
+          <p class="text-lg">Reach out to us for a free consultation or to schedule a service!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-4">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 2 in the Bay. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
